@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", "Trebuchet MS", sans-serif;
+    background-color: #fff9fb;
+    color: #5c4b51;
+}
+
+.topo-unico {
+    background-color: #fbcfe8;
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.topo-unico::before {
+    content: "♡";
+    position: absolute;
+    left: 35px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.topo-unico::after {
+    content: "♡";
+    position: absolute;
+    right: 35px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.topo-unico h1 {
+    font-size: 24px;
+    color: #5c4b51;
+}
+
+.menu {
+    background-color: #ffffff;
+    padding: 14px 0;
+    border-bottom: 2px dashed #f472b6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.centralizar li a {
+    text-decoration: none;
+    color: #5c4b51;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.centralizar li a:hover {
+    color: #ffffff;
+    background-color: #f472b6;
+}
+
+.inicio {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 2px dashed #fbcfe8;
+}
+
+.texto {
+    max-width: 500px;
+}
+
+.frase {
+    color: #f472b6;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.texto h2 {
+    font-size: 52px;
+    font-weight: bold;
+    color: #f472b6;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.texto h2 span {
+    display: block;
+    color: #5c4b51;
+    font-size: 42px;
+}
+
+.descricao {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.descricao strong {
+    color: #f472b6;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #f472b6;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(244, 114, 182, 0.3);
+    transition: 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #fb7185;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(244, 114, 182, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 60px;
+    background-color: #fbcfe8;
+    color: #5c4b51;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .topo-unico::before,
+    .topo-unico::after {
+        display: none;
+    }
+    .centralizar {
+        gap: 10px;
+    }
+    .texto h2 {
+        font-size: 40px;
+    }
+    .texto h2 span {
+        font-size: 32px;
+    }
+}
